@@ -349,86 +349,44 @@ footer p {
 /* Table */
 
 /* Container styling */
-.table-container {
-    padding: 20px;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-/* Section heading */
-.table-section-heading {
-    color: #00ff1a;
-    text-align: center;
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
-
-/* Responsive table styling */
 table {
-    width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
-    background-color: #1e1e1e;
-    border-radius: 10px;
-    overflow: hidden;
-}
+    width: 100%;
+    margin: 20px 0;
+    border: 2px solid #00ff1a;
+  }
 
-thead th {
-    background-color: #3cb448;
-    color: #121212;
-    font-weight: 700;
+  thead {
+    background-color: #3C8543;
+    color: #00ff1a;
+  }
+
+  th, td {
+    border: 1px solid #00ff1a;
     padding: 12px;
     text-align: left;
-}
+  }
 
-tbody td {
-    padding: 10px;
-    border-bottom: 1px solid #3cb448;
-    color: #e0e0e0;
-}
+  tbody tr:hover {
+    background-color: #3C8543;
+  }
 
-tbody tr:nth-child(even) {
-    background-color: #232323;
-}
+  .card {
+    background-color: #121212;
+    color: #00ff1a;
+    border: 1px solid #00ff1a;
+    margin: 10px;
+  }
 
-/* Hover effect on rows */
-tbody tr:hover {
-    background-color: #2a2a2a;
-    transition: background-color 0.3s ease;
-}
+  .card-header {
+    background-color: #3C8543;
+  }
 
-/* Table responsiveness */
-@media (max-width: 768px) {
+  @media (max-width: 768px) {
     table {
-        display: block;
-        overflow-x: auto;
-        white-space: nowrap;
+      font-size: 14px;
     }
-}
-
-/* Mobile view - ensure good spacing */
-@media (max-width: 480px) {
-    .table-section-heading {
-        font-size: 1.8em;
-    }
-
-    tbody td, thead th {
-        padding: 8px;
-    }
-}
-
-/* Improve overall spacing */
-td, th {
-    padding: 12px;
-    text-align: left;
-}
-
-/* Aligning the "Total" rows centrally */
-tbody tr td[colspan="2"],
-tbody tr td[colspan="3"] {
-    text-align: right;
-    font-weight: 700;
-}
+  }
 
 /* Button for smooth transitions */
 .btn {
