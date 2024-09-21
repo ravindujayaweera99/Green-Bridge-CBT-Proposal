@@ -1,0 +1,222 @@
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #121212;
+    /* Dark background */
+    color: #e0e0e0;
+    /* Lighter text */
+    font-family: 'Poppins', sans-serif;
+    padding-top: 60px;
+    /* Adjust for fixed navbar */
+}
+
+li {
+    color: #3cb448;
+    font-weight: 700;
+}
+
+h4 {
+    color: #00ff1a;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #1c1c1c;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    border-bottom: 3px solid #3C8543;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+section {
+    padding: 60px 0;
+    background-color: #1c1c1c;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* nvbar */
+
+.navbar {
+    background-color: #1f1f1f;
+    /* Dark navbar */
+    border-bottom: 1px solid #3C8543;
+    /* Subtle border */
+}
+
+.nav-item {
+    background-color: #123916;
+    border-radius: 5px;
+    margin: 0px 10px;
+    text-align: center;
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+    color: #f5f5f5 !important;
+    /* Light text */
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #3C8543 !important;
+    /* Modern hover effect */
+}
+
+.section-heading {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #3C8543;
+    padding-bottom: 10px;
+    color: #f5f5f5;
+}
+
+.container {
+    max-width: 1140px;
+    /* Wider max width */
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+footer {
+    background-color: #1f1f1f;
+    color: #bdbdbd;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+
+.accordion-button{
+    background-color: #3cb448;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+}
+
+.accordion-button:hover {
+    cursor: pointer;
+    background-color: #2b6231;
+    transition: background-color 0.3s ease;
+}
+
+/* Table */
+
+/* Container styling */
+.table-container {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Section heading */
+.table-section-heading {
+    color: #00ff1a;
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Responsive table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+thead th {
+    background-color: #3cb448;
+    color: #121212;
+    font-weight: 700;
+    padding: 12px;
+    text-align: left;
+}
+
+tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #3cb448;
+    color: #e0e0e0;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #232323;
+}
+
+/* Hover effect on rows */
+tbody tr:hover {
+    background-color: #2a2a2a;
+    transition: background-color 0.3s ease;
+}
+
+/* Table responsiveness */
+@media (max-width: 768px) {
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
+/* Mobile view - ensure good spacing */
+@media (max-width: 480px) {
+    .table-section-heading {
+        font-size: 1.8em;
+    }
+
+    tbody td, thead th {
+        padding: 8px;
+    }
+}
+
+/* Improve overall spacing */
+td, th {
+    padding: 12px;
+    text-align: left;
+}
+
+/* Aligning the "Total" rows centrally */
+tbody tr td[colspan="2"],
+tbody tr td[colspan="3"] {
+    text-align: right;
+    font-weight: 700;
+}
+
+/* Button for smooth transitions */
+.btn {
+    background-color: #3C8543;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #3C8543;
+    cursor: pointer;
+}
+
+/* Add transitions for links */
+a {
+    transition: color 0.3s ease;
+}
