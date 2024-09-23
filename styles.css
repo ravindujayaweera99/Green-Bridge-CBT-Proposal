@@ -4,12 +4,9 @@
 
 body {
     background-color: #121212;
-    /* Dark background */
     color: #e0e0e0;
-    /* Lighter text */
     font-family: 'Poppins', sans-serif;
     padding-top: 60px;
-    /* Adjust for fixed navbar */
 }
 
 li {
@@ -34,6 +31,7 @@ h4 {
     font-size: 3.5rem;
     font-weight: 600;
     margin-bottom: 10px;
+    color: #1a54ba;
 }
 
 .hero p {
@@ -53,9 +51,15 @@ section {
 
 .navbar {
     background-color: #1f1f1f;
-    /* Dark navbar */
     border-bottom: 1px solid #3C8543;
-    /* Subtle border */
+}
+
+.navbar-collapse {
+    background-color: #1c1c1c;
+}
+
+.navbar-collapse ul li {
+    background-color: #1c1c1c;
 }
 
 .nav-item {
@@ -71,21 +75,18 @@ section {
 .navbar-brand,
 .navbar-nav .nav-link {
     color: #f5f5f5 !important;
-    /* Light text */
     transition: color 0.3s ease;
 }
 
 .navbar-nav .nav-link:hover {
     color: #3C8543 !important;
-    /* Modern hover effect */
 }
 
 /* Cover Letter */
 
 #cover-letter {
     background-color: #222222;
-    /* Slightly lighter background */
-    padding: 40px 20px;
+    padding: 40px;
     border-radius: 12px;
     box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
 }
@@ -110,18 +111,15 @@ section {
 
 #cover-letter p br {
     display: none;
-    /* Remove unnecessary spacing from line breaks */
 }
 
 #cover-letter p.text-justify {
     text-align: justify;
     text-indent: 40px;
-    /* Indent first line of paragraphs */
 }
 
 #cover-letter p strong {
     color: #00ff1a;
-    /* Highlight key text */
 }
 
 #cover-letter p:last-child {
@@ -131,12 +129,10 @@ section {
 
 #cover-letter p:last-child br {
     display: initial;
-    /* Allow spacing for signature */
 }
 
 #cover-letter .container {
-    max-width: 800px;
-    /* Make the section narrower for a clean layout */
+    max-width: 1100px;
     margin: 0 auto;
 }
 
@@ -148,21 +144,16 @@ section {
 /* Executive Summary Section */
 
 #executive-summary {
-    background: linear-gradient(145deg, #141814, #283c2a);
-    /* Modern dark gradient background */
+    background-color: #22222276;
     color: #eeeeee;
-    /* Light text for contrast */
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    /* Subtle shadow for depth */
     margin-bottom: 30px;
-    /* Spacing between sections */
 }
 
 #executive-summary .container {
     max-width: 1100px;
-    /* Slightly narrower for better readability */
     margin: 0 auto;
 }
 
@@ -170,7 +161,6 @@ section {
     font-size: 2.5rem;
     font-weight: 700;
     color: #3C8543;
-    /* Vibrant accent color for heading */
     text-align: center;
     margin-bottom: 30px;
     text-transform: uppercase;
@@ -296,6 +286,10 @@ section {
     color: #61dafb;
 }
 
+#implementation-plan h2 {
+    color: #00ff1a;
+}
+
 /* Media Query for responsiveness */
 @media (max-width: 768px) {
     #introduction {
@@ -344,7 +338,7 @@ footer p {
 }
 
 .accordion-button {
-    background-color: #3cb448;
+    background-color: #1a54ba;
     color: #fff;
     border: none;
     border-radius: 10px;
@@ -352,7 +346,7 @@ footer p {
 
 .accordion-button:hover {
     cursor: pointer;
-    background-color: #2b6231;
+    background-color: #102b5b;
     transition: background-color 0.3s ease;
 }
 
@@ -363,38 +357,38 @@ table {
     border-collapse: collapse;
     width: 100%;
     margin: 20px 0;
-    border: 2px solid #00ff1a;
+    border: 2px solid #1a54ba;
 }
 
 thead {
-    background-color: #3C8543;
-    color: #00ff1a;
+    background-color: #1a54ba;
+    color: #fff;
 }
 
 th,
 td {
-    border: 1px solid #00ff1a;
+    border: 1px solid #1a54ba;
     padding: 12px;
     text-align: left;
 }
 
 tbody tr:hover {
-    background-color: #3C8543;
+    background-color: #0f2c60;
 }
 
 .card {
     background-color: #121212;
     color: #fff;
-    border: 1px solid #00ff1a;
+    border: 1px solid #3573dd;
     margin: 10px;
 }
 
 .card-header {
-    background-color: #3C8543;
+    background-color: #1a54ba;
 }
 
 .btn {
-    background-color: #3C8543;
+    background-color: #1a54ba;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -403,12 +397,22 @@ tbody tr:hover {
 }
 
 .btn:hover {
-    background-color: #3C8543;
+    background-color: #11274c;
     cursor: pointer;
 }
 
 a {
     transition: color 0.3s ease;
+}
+
+.accordion-button {
+    font-size: 16px;
+    padding: 10px 15px;
+}
+
+.accordion-body {
+    font-size: 14px;
+    padding: 10px 15px;
 }
 
 @media (max-width: 768px) {
