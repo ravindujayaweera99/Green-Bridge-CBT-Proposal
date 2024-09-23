@@ -259,15 +259,14 @@ section {
 }
 
 #introduction ol {
-    margin-left: 20px;
+    margin-left: 0px;
 }
 
 #introduction li {
     font-weight: 600;
     color: #00ff1a;
-    /* Highlighted list item */
     margin-bottom: 10px;
-    font-size: 1.2rem;
+    font-size: 12rem;
 }
 
 #introduction li::marker {
