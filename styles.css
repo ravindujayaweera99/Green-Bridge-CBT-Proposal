@@ -148,23 +148,29 @@ section {
 /* Executive Summary Section */
 
 #executive-summary {
-    background: linear-gradient(145deg, #141814, #283c2a); /* Modern dark gradient background */
-    color: #eeeeee; /* Light text for contrast */
+    background: linear-gradient(145deg, #141814, #283c2a);
+    /* Modern dark gradient background */
+    color: #eeeeee;
+    /* Light text for contrast */
     padding: 50px;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    margin-bottom: 30px; /* Spacing between sections */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /* Subtle shadow for depth */
+    margin-bottom: 30px;
+    /* Spacing between sections */
 }
 
 #executive-summary .container {
-    max-width: 1100px; /* Slightly narrower for better readability */
+    max-width: 1100px;
+    /* Slightly narrower for better readability */
     margin: 0 auto;
 }
 
 #executive-summary .section-heading {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #3C8543; /* Vibrant accent color for heading */
+    color: #3C8543;
+    /* Vibrant accent color for heading */
     text-align: center;
     margin-bottom: 30px;
     text-transform: uppercase;
@@ -182,7 +188,8 @@ section {
 }
 
 #executive-summary p strong {
-    color: #00ff1a; /* Highlight important text */
+    color: #00ff1a;
+    /* Highlight important text */
 }
 
 #executive-summary a {
@@ -192,7 +199,8 @@ section {
 }
 
 #executive-summary a:hover {
-    color: #00ff1a; /* Hover effect for links */
+    color: #00ff1a;
+    /* Hover effect for links */
 }
 
 #executive-summary .text-justify {
@@ -217,12 +225,16 @@ section {
 /* Introduction Section */
 
 #introduction {
-    background: linear-gradient(145deg, #121212, #121212); /* A gradient with blue hues */
-    color: #f0f0f0; /* Light text for better readability */
+    background: linear-gradient(145deg, #121212, #121212);
+    /* A gradient with blue hues */
+    color: #f0f0f0;
+    /* Light text for better readability */
     padding: 50px;
     border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    margin-bottom: 30px; /* Space between sections */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    /* Subtle shadow for depth */
+    margin-bottom: 30px;
+    /* Space between sections */
 }
 
 #introduction .container {
@@ -233,7 +245,8 @@ section {
 #introduction .section-heading {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #3C8543; /* Bright yellow accent for section heading */
+    color: #3C8543;
+    /* Bright yellow accent for section heading */
     text-align: center;
     margin-bottom: 30px;
     text-transform: uppercase;
@@ -246,7 +259,8 @@ section {
     font-size: 1.1rem;
     line-height: 1.7;
     margin-bottom: 20px;
-    color: #f0f0f0; /* White color for text */
+    color: #f0f0f0;
+    /* White color for text */
     text-align: justify;
 }
 
@@ -256,23 +270,26 @@ section {
 
 #introduction li {
     font-weight: 600;
-    color: #00ff1a; /* Highlighted list item */
+    color: #00ff1a;
+    /* Highlighted list item */
     margin-bottom: 10px;
     font-size: 1.2rem;
 }
 
 #introduction li::marker {
-    color: #00ff1a; /* Custom marker color */
+    color: #00ff1a;
+    /* Custom marker color */
 }
 
-#introduction p + p {
+#introduction p+p {
     font-size: 1rem;
-    color: #eeeeee; /* Slightly dimmed for list item descriptions */
+    color: #eeeeee;
+    /* Slightly dimmed for list item descriptions */
     line-height: 1.6;
     margin-bottom: 15px;
 }
 
-#introduction ol li + p {
+#introduction ol li+p {
     margin-bottom: 20px;
 }
 
@@ -333,7 +350,7 @@ footer p {
     margin: 0;
 }
 
-.accordion-button{
+.accordion-button {
     background-color: #3cb448;
     color: #fff;
     border: none;
@@ -354,41 +371,74 @@ table {
     width: 100%;
     margin: 20px 0;
     border: 2px solid #00ff1a;
-  }
+}
 
-  thead {
+thead {
     background-color: #3C8543;
     color: #00ff1a;
-  }
+}
 
-  th, td {
+th,
+td {
     border: 1px solid #00ff1a;
     padding: 12px;
     text-align: left;
-  }
+}
 
-  tbody tr:hover {
+tbody tr:hover {
     background-color: #3C8543;
-  }
+}
 
-  .card {
+.card {
     background-color: #121212;
     color: #00ff1a;
     border: 1px solid #00ff1a;
     margin: 10px;
-  }
+}
 
-  .card-header {
+.card-header {
     background-color: #3C8543;
-  }
+}
 
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
     table {
-      font-size: 14px;
+        font-size: 14px;
     }
-  }
+}
 
-/* Button for smooth transitions */
+@media (max-width: 576px) {
+    .accordion-button {
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+
+    .accordion-body {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+
+    .section-heading {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+
+    .accordion-item {
+        margin-bottom: 10px;
+    }
+}
+
+
 .btn {
     background-color: #3C8543;
     color: white;
@@ -403,7 +453,6 @@ table {
     cursor: pointer;
 }
 
-/* Add transitions for links */
 a {
     transition: color 0.3s ease;
 }
