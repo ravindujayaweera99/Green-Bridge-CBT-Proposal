@@ -18,6 +18,24 @@ h4 {
     color: #00ff1a;
 }
 
+#heading {
+    font-size: 2.5rem !important;
+    color: #298232 !important;
+    text-align: center !important;
+}
+
+@media (max-width: 768px) {
+    #heading {
+        font-size: 14px !important;
+    }
+}
+
+#accordion-section {
+    margin-bottom: 20px !important;
+    padding: 20px !important;
+    display: block !important;
+}
+
 /* Hero Section */
 .hero {
     background-color: #1c1c1c;
@@ -293,7 +311,7 @@ section {
 /* Media Query for responsiveness */
 @media (max-width: 768px) {
     #introduction {
-        padding: 30px;
+        padding: 10px;
     }
 
     #introduction .section-heading {
@@ -461,6 +479,10 @@ a {
     .send-address,
     #cover-letter p {
         font-size: 14px;
+    }
+
+    .section-heading {
+        padding: 10px;
     }
 
     #executive-summary p {
